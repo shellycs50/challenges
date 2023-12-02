@@ -1,0 +1,75 @@
+ body {
+    font-family: sans-serif;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column
+  }
+ 
+  div.results {
+    background-color: rgba(0, 0, 0 ,0.3);
+  } 
+  
+  div.calc-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: rgba(0, 0, 0 ,0);
+    padding: 30px;
+  }
+
+    
+  div.calc-wrapper label {
+    font-size: 0.9rem;
+    background-color: white;
+    color: grey;
+    margin: 0px;
+    opacity: 100%;
+    border-radius: 10px;
+  }
+   
+  span.calc-input-symbol {
+    color: grey;
+  }
+  
+   #calc-dollar-sign {
+    position: relative;
+    top: 2px;
+    pointer-events: none;
+  } 
+  
+  div.calc-child-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 10%;
+  } 
+
+.input-wrapper {
+  margin: 0 auto;
+  padding: 8px 12px;
+  border: 1px solid #666;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+}
+
+.calc-wrapper .input-wrapper input {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  height: 3vh;
+  width: 100%;
+}
+
+#amount-wrapper {
+  width: 50%;
+}
+
+#amount-label {
+  position: relative;
+  left: 40%;
+  bottom: 110%;
+  width: 50%;
+  
+}

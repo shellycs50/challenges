@@ -1,0 +1,22 @@
+function scramble(str1, str2) {
+  
+  let intdict = Array(26).fill(0)
+  
+  const str1len = str1.length
+  for (let j = 0; j < str1len; j++)
+    {
+      intdict[str1.charCodeAt(j) - "a".charCodeAt(0)] += 1;
+    }
+  //see if intdict has enough  
+  const str2len = str2.length
+  for (let z = 0; z < str2len; z++)
+    {
+      let value = str2.charCodeAt(z) - "a".charCodeAt(0);
+      intdict[value] -= 1;
+      if (intdict[value] === -1)
+        {
+          return false;
+        }
+    }
+  return true;
+}
