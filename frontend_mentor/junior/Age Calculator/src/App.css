@@ -1,0 +1,97 @@
+@font-face {
+  font-family: poppins-bold;
+  src: url('../src/assets/fonts/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: poppins-x-bold;
+  src: url('../src/assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: poppins-i-bold;
+  src: url('../src/assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+}
+
+div.birthday-wrapper {
+  margin-top: 20vh;
+  background-color: hsl(0, 0%, 94%);
+}
+form.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: .6vh;
+  width: 80%;
+}
+form.grid-3 input {
+  width: 70%;
+  border: none;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px
+}
+
+div.form-wrapper {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body, input, label, a {
+  font-family: poppins-bold;
+  font-size: 1.3rem;
+}
+
+h1, h2, h3, h4 {
+  font-family: poppins-i-bold;
+}
+
+form label {
+  letter-spacing: .3em;
+  font-size: 1rem
+}
+
+div.birthday-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h2 {
+  font-size: 3rem;
+}
+
+span.value-display {
+  color: hsl(259, 100%, 65%);
+  padding-right: 0.25vw;
+}
+
+div.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5vh;
+}
+
+div.content h2 {
+  margin: 0;
+  padding: 0;
+}
+
+p.error-message {
+  font-size: 0.7rem;
+  color: hsl(0, 100%, 67%)
+}
+
+a.activate-birthday {
+  cursor: pointer;
+  position: relative;
+  left: 20vw;
+}
+
+div.activate-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
