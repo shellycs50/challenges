@@ -34,7 +34,9 @@ function App() {
     30,
     31 
   ]
-
+  function isLeapYear(year) {
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+}
   function date_is_valid() {
     let errors = {
       years: false,
@@ -50,7 +52,7 @@ function App() {
       console.log('day error')
     }
     //leap year
-    if (year % 4 != 0 && month == 2 && day > 28) {
+    if (isLeapYear(year) && month == 2 && day > 28) {
       console.log('leap year error')
       errors.days = true;
     }
